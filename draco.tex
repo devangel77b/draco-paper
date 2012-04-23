@@ -31,7 +31,7 @@
 \bibliographystyle{apalike}
 
 % Figures at end for draft
-\usepackage[lists,tablesfirst]{endfloat}
+%\usepackage[lists,tablesfirst]{endfloat}
 
 % Genus and species names
 \newcommand{\Draco}{\emph{Draco}}
@@ -90,51 +90,51 @@ Simulations will be conducted in Python.  Fill in the details here.
 Fig.~\ref{fig:lift_aoa} shows the lift, drag, and pitching moment coefficients for the flat midglide and cambered initial glide models as functions of angle of attack.  I still need to add the cartoons and notes to the various figures that I have on the pencil version of this paper. 
 
 \begin{figure}
-\includegraphics{Draco_plots/lift_v_aoa.pdf} 
-\includegraphics{Draco_plots/drag_v_aoa.pdf} 
-\includegraphics{Draco_plots/pitch_v_aoa.pdf} 
+\includegraphics{figures/lift_v_aoa.pdf} 
+\includegraphics{figures/drag_v_aoa.pdf} 
+\includegraphics{figures/pitch_v_aoa.pdf} 
 \caption{$C_L$, $C_D$, and $C_M$ versus angle of attack.  Flat midglide posture shown in red; cambered initial glide position shown in blue.  Open circles indicate tests at \Dmelanopogon\ Reynolds number; all other tests were completed at \Dmaximus\ Reynolds number.  Lines indicate locally weighted scatter plot loess smoothing.}
 \label{fig:lift_aoa}
 \end{figure}
 
 \begin{figure}
-\includegraphics{Draco_plots/coeffs_v_Re.pdf}
+\includegraphics{figures/coeffs_v_Re.pdf}
 \caption{Dependence of $C_L$ (open triangles), $C_D$ (filled squares), and $C_M$ (open diamonds) on Reynolds number.  Over the range of Reynolds numbers experienced by \Draco\ lizards, about 50,000 to 70,000, slopes are not significantly different from zero (linear regression, $p=0.06483$ for $C_L$, $p=0.2077$ for $C_D$, $p=0.1555$ for $C_M$).}
 \label{fig:coeffs_Re}
 \end{figure}
 
 \begin{figure}
-\includegraphics{Draco_plots/LD_v_aoa.pdf}
+\includegraphics{figures/LD_v_aoa.pdf}
 \caption{Lift to drag ratio versus angle of attack for flat midglide (red) and cambered initial glide (blue) postures.  The 95\% quantile lift-to-drag ratio is 2.7 for the flat posture and 2.5 for the cambered posture, corresponding to glide angles of 20.3 and 21.8 degrees respectively.  The absolute maximum lift-to-drag ratios are 3.2 and 3.1 for flat and cambered postures, corresponding to glide angles of \ang{17.0} and \ang{17.7}.}
 \label{fig:LD_v_aoa}
 \end{figure}
 
 \begin{figure}
-\includegraphics{Draco_plots/L_v_Re.pdf}
+\includegraphics{figures/L_v_Re.pdf}
 \caption{Lift versus Reynolds number for no wings, half wings, \Draco, and double wings.  Need to add dot indicating \Dmelanopogon\ and \Dmaximus\ operating points and weights to indicate force production margin.  Some of the effect here is due to area. }
 \label{fig:L_v_Re}
 \end{figure}
 
 \begin{figure}
-\includegraphics{Draco_plots/LD_v_Re.pdf}
+\includegraphics{figures/LD_v_Re.pdf}
 \caption{Lift-to-drag ratio versus Reynolds number for no wings, half wings, \Draco, and double wings.  Area effects are normalized out here so that all we see is the effect of wing aspect ratio.  There is slight improvement as wing aspect ratio is increased.  Need to add cartoons.}
 \label{fig:LD_v_Re}
 \end{figure}
 
 \begin{figure}
-\includegraphics{Draco_plots/Cl_v_Cd_wings.pdf}
+\includegraphics{figures/Cl_v_Cd_wings.pdf}
 \caption{Lift coefficient versus drag coefficient for no wings, half wings, \Draco, and double wings.  Going from no wings to half wings vastly improves the parachuting performance.  Further increases in wing do not greatly alter parachuting performance, but do improve glide angle. }
 \label{fig:Cl_v_Cd_wings}
 \end{figure}
 
 \begin{figure}
-\includegraphics{Draco_plots/LD_v_aoa_wings.pdf}
+\includegraphics{figures/LD_v_aoa_wings.pdf}
 \caption{Lift-to-drag ratio versus angle of attack for no wings, half wings, \Draco, and double wings.  This plot confirms that further incrases in wing improve glide angle.}
 \label{fig:LD_v_aoa_wings}
 \end{figure}
 
 \begin{figure}
-\includegraphics{Draco_plots/Cm_v_aoa_wings.pdf}
+\includegraphics{figures/Cm_v_aoa_wings.pdf}
 \caption{Pitching moment coefficient versus angle of attack for no wings, half wings, \Draco, and double wings.  A double wing may have a large area and might be expected to be a great parachute... but it is not stable?  Need to add tail on this plot.}
 \label{fig:Cm_v_aoa_wings}
 \end{figure}
@@ -161,5 +161,5 @@ People normally focus on L/D ratio.  Early in addition of wings, the largest per
 
 \section*{Acknowledgements}
 We thank the students of UC Berkeley's spring 2009 Mechanics of Organisms (IB135L) class for collection of some of the force measurements and all of the flow visualization.  We also thank Felicia Linn, Louise Qu, Yonatan Munk, Aaron Hoover, Kevin Peterson and the Koehl and Fearing Labs at UC Berkeley for assistance in construction of models, and Tom Libby and the Berkeley Center for Integrative Biomechanics in Education and Research (CIBER) for use of the force sensor.
-\bibliography{draco}
+\bibliography{references/draco}
 \end{document}

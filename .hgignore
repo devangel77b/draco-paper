@@ -6,5 +6,7 @@ syntax: glob
 *.synctex.gz
 *.DS_Store
 ~*
+*.log
+*.pdf
 
 syntax: regexp
